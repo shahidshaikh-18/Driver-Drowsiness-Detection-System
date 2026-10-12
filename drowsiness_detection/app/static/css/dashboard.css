@@ -1,0 +1,86 @@
+body {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('login.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Lora", serif;
+    color: #f1f1f1;
+}
+
+.dashboard-container {
+    background: rgba(255, 255, 255, 0.08); /* translucent */
+    backdrop-filter: blur(18px); /* blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: slideIn 0.7s ease;
+    color: #f1f1f1;
+}
+
+.dashboard-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.dashboard-container p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detection-btn, .logout-btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.detection-btn {
+    background-color: #3399ff;
+    color: #fff;
+}
+
+.detection-btn:hover {
+    background-color: #2a7acc;
+    transform: scale(1.05);
+}
+
+.logout-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f1f1f1;
+    border: 1px solid #ddd;
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

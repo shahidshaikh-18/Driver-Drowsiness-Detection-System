@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/67c56b8389.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm" method="POST">
+            <div class="input-group">
+                <div class="input-box">
+                    <label class="required">Username</label>
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <label class="required">Password</label>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <center>
+                    <button type="submit" class="btn">Login</button>
+                    <p>Don't have an account? <a href="/signup">Sign up</a></p>
+                </center>
+            </div>
+        </form>
+    </div>
+    <div class="contact">
+        <address>
+            <a href="mailto:shahidshaikh878sy@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </address>
+    </div>
+</body>
+
+</html>

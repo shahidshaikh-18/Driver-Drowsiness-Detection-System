@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drowsiness Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/detection.css') }}">
+</head>
+
+<body>
+    <h1>Drowsiness Detection Live Feed</h1>
+    <div class="video-container">
+        <img src="{{ url_for('main.video_feed') }}" width="640" height="480">
+    </div>
+    <div class="btn-container">
+        <form action="{{ url_for('main.stop_detection') }}" method="post" style="display:inline-block;">
+            <button type="submit">Stop Detection</button>
+        </form>
+        <form action="{{ url_for('main.logout') }}" method="post" style="display:inline-block; margin-left: 10px;">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+
+</html>

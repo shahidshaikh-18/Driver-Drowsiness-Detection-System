@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>You are now logged in.</p>
+
+        <div class="button-container">
+            <button class="detection-btn" id="startDetectionBtn">Start Detection</button><br>
+            <form action="{{ url_for('main.logout') }}" method="post" style="display:inline;">
+                <button type="submit" class="logout-btn" id="logoutBtn">Logout</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

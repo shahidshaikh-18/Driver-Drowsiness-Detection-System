@@ -1,0 +1,11 @@
+Flask
+opencv-python
+dlib
+imutils
+pygame
+numpy
+flask_pymongo (optional)
+email-validator
+Werkzeug (for password hashing)
+mysql-connector-python
+Flask-MySQLdb or Flask-MySQL
