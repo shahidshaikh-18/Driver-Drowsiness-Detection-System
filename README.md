@@ -71,7 +71,7 @@ drowsiness_detection/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/drowsiness_detection.git
+git clone https://github.com/shahidshaikh-18/drowsiness_detection.git
 cd drowsiness_detection
 ```
 
